@@ -13,43 +13,44 @@ const colors = {
 const sizes = {
   small: css`
     font-size: ${({ theme }) => theme.font.size.xxs};
-    
-    ${({theme}) => theme.media.md} {
-      font-size: ${({ theme }) => theme.font.size.xs}; 
+
+    ${({ theme }) => theme.media.md} {
+      font-size: ${({ theme }) => theme.font.size.xs};
     }
 
-    ${({theme}) => theme.media.lg} {
+    ${({ theme }) => theme.media.lg} {
       font-size: ${({ theme }) => theme.font.size.s};
     }
   `,
 
   medium: css`
     font-size: ${({ theme }) => theme.font.size.s};
-    
-    ${({theme}) => theme.media.md} {
-      font-size: ${({ theme }) => theme.font.size.m}; 
+
+    ${({ theme }) => theme.media.md} {
+      font-size: ${({ theme }) => theme.font.size.m};
     }
 
-    ${({theme}) => theme.media.lg} {
+    ${({ theme }) => theme.media.lg} {
       font-size: ${({ theme }) => theme.font.size.l};
     }
   `,
 
   large: css`
     font-size: ${({ theme }) => theme.font.size.l};
-    
-    ${({theme}) => theme.media.md} {
-      font-size: ${({ theme }) => theme.font.size.xl}; 
+
+    ${({ theme }) => theme.media.md} {
+      font-size: ${({ theme }) => theme.font.size.xl};
     }
 
-    ${({theme}) => theme.media.lg} {
+    ${({ theme }) => theme.media.lg} {
       font-size: ${({ theme }) => theme.font.size.xxl};
     }
   `,
 };
 const Header = styled.h2<Partial<HeaderTextTypes>>`
+  font-family: ${({theme}) => theme.font.family.secondary};
   ${({ color }) => color && colors[color]};
-  ${({size}) => size && sizes[size]};
+  ${({ size }) => size && sizes[size]};
 `;
 
 export default { Header };

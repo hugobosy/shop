@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import {ThemeProvider} from "styled-components";
 import {theme} from "./ui/theme";
 import GlobalStyles from './ui/components/global-styles/GlobalStyles';
+import './ui/styles/fonts.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

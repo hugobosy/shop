@@ -2,7 +2,7 @@ export const font = {
     weight: {
         thin: 300,
         normal: 400,
-        'semi-bold': 500,
+        semiBold: 500,
         bold: 600,
     },
 
@@ -17,7 +17,7 @@ export const font = {
     },
 
     family: {
-        primary: 'Roboto, sans-serif',
-        secondary: 'Lemonada, sans-serif',
+        primary: "Roboto",
+        secondary: "Lemonada",
     }
 }

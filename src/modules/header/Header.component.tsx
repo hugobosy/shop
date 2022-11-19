@@ -12,7 +12,16 @@ export const Header = () => {
       <S.Header>
         <HeaderText text="Fruits store" color="green" size="large" />
       </S.Header>
-      <Burger />
+      <S.BurgerWrapper>
+        <Burger />
+      </S.BurgerWrapper>
+      <S.MenuDesktop>
+        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
+        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
+        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
+        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
+        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
+      </S.MenuDesktop>
       <S.Icons>
         <BiUser size={30} />
         <BiSearch size={30} />

@@ -86,6 +86,16 @@ const MenuItem = styled.a`
   color: ${({ theme }) => theme.colors.dark};
 `;
 
+const MenuMobile = styled.div `
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: ${({theme}) => theme.colors.accent};
+  z-index: 999;
+`
+
 export default {
   Wrapper,
   Header,
@@ -95,4 +105,5 @@ export default {
   Count,
   MenuDesktop,
   MenuItem,
+  MenuMobile,
 };

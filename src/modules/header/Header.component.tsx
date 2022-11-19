@@ -6,6 +6,7 @@ import { BiBasket, BiSearch, BiUser } from "react-icons/bi";
 
 export const Header = () => {
   const [countItemBasket, setCountBasketItem] = useState(0);
+  const [activeMenu, setActiveMenu] = useState(false);
 
   return (
     <S.Wrapper>
@@ -16,12 +17,39 @@ export const Header = () => {
         <Burger />
       </S.BurgerWrapper>
       <S.MenuDesktop>
-        <li><S.MenuItem href="#">Home</S.MenuItem></li>
-        <li><S.MenuItem href="#">Shop</S.MenuItem></li>
-        <li><S.MenuItem href="#">Blog</S.MenuItem></li>
-        <li><S.MenuItem href="#">Vendors</S.MenuItem></li>
-        <li><S.MenuItem href="#">Pages</S.MenuItem></li>
+        <li>
+          <S.MenuItem href="#">Home</S.MenuItem>
+        </li>
+        <li>
+          <S.MenuItem href="#">Shop</S.MenuItem>
+        </li>
+        <li>
+          <S.MenuItem href="#">Blog</S.MenuItem>
+        </li>
+        <li>
+          <S.MenuItem href="#">Vendors</S.MenuItem>
+        </li>
+        <li>
+          <S.MenuItem href="#">Pages</S.MenuItem>
+        </li>
       </S.MenuDesktop>
+      <S.MenuMobile>
+        <li>
+          <S.MenuItem href="#">Home</S.MenuItem>
+        </li>
+        <li>
+          <S.MenuItem href="#">Shop</S.MenuItem>
+        </li>
+        <li>
+          <S.MenuItem href="#">Blog</S.MenuItem>
+        </li>
+        <li>
+          <S.MenuItem href="#">Vendors</S.MenuItem>
+        </li>
+        <li>
+          <S.MenuItem href="#">Pages</S.MenuItem>
+        </li>
+      </S.MenuMobile>
       <S.Icons>
         <BiUser size={30} />
         <BiSearch size={30} />

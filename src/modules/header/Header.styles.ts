@@ -70,19 +70,20 @@ const Count = styled.div`
 const MenuDesktop = styled.ul`
   display: none;
   width: 100%;
-  column-gap: 15px;
+  column-gap: 60px;
   justify-content: center;
   align-items: center;
-  
-  ${({theme}) => theme.media.lg} {
+
+  ${({ theme }) => theme.media.lg} {
     display: flex;
   }
 `;
 
 const MenuItem = styled.a`
   display: block;
-  font-size: ${({ theme }) => theme.font.size.xxxxs};
+  font-size: ${({ theme }) => theme.font.size.xxs};
   font-family: ${({ theme }) => theme.font.family.primary};
+  color: ${({ theme }) => theme.colors.dark};
 `;
 
 export default {

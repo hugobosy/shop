@@ -16,11 +16,11 @@ export const Header = () => {
         <Burger />
       </S.BurgerWrapper>
       <S.MenuDesktop>
-        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
-        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
-        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
-        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
-        <li><S.MenuItem href="#">Strona główna</S.MenuItem></li>
+        <li><S.MenuItem href="#">Home</S.MenuItem></li>
+        <li><S.MenuItem href="#">Shop</S.MenuItem></li>
+        <li><S.MenuItem href="#">Blog</S.MenuItem></li>
+        <li><S.MenuItem href="#">Vendors</S.MenuItem></li>
+        <li><S.MenuItem href="#">Pages</S.MenuItem></li>
       </S.MenuDesktop>
       <S.Icons>
         <BiUser size={30} />
